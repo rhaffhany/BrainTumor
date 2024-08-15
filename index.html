@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Brain tumor</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar fixed-top  bg-dark navbar-expand-lg mb-sm-5 "data-bs-theme="dark">
+        <div class="container-fluid">
+
+          <img src="img/human-brain-t6d-removebg-preview.png" alt="human-brain">
+          <a class="navbar-brand ps-2" href="#home">Brain Tumor Detection</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#support">Get Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contact Us</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- header -->
+    <header id="home">
+        <div class="layer vh-100 d-flex align-items-center mt-sm-5 overflow-auto">
+            <div class="items d-md-flex d-block">
+
+                <div class="content ps-4">
+                    <h1 class="text-white pt-5 mt-sm-5 w-100  m-0 ">Guding Patients and Empowering Care..</h1>
+                    <button class=" text-white fw-bolder border-0 rounded-5 p-3 mt-3 ">Get Support</button>
+                </div>
+               
+                <div class=" tumor-detect ps-4 ps-md-0 mt-3 mt-md-0 d-flex flex-column justify-content-end">
+                    <h4 class="fw-bold ">Upload Photo Here To Detect The Tumor</h4>
+                    <input type="file" id="inputFile" name="photo-predict" accept="images/jpg ,images/jpeg, images/png" class= "text-white d-none">
+                    <div>
+                      <label for="inputFile" id="uploadPhoto" class="w-50 text-center border border-0 rounded-5 p-1 mt-1">Upload Photo</label> 
+                      <i class="fa-solid fa-check icon px-2 d-none "></i>
+                    </div>
+                    <button type="submit" class="w-25 text-white border-0 rounded-5 p-2 mt-2" value="photo-predict" name="photo-predict"><a href="predict.html" class="text-decoration-none text-white">predict</a></button>
+                   
+                </div>
+
+            </div>
+            
+         
+        </div>
+    </header>
+   
+    
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

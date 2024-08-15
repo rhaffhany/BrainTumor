@@ -1,0 +1,59 @@
+:root{
+    --blue: #284b63;
+    --gray: #d9d9d9;
+    --white: #f1f1f1;
+    --teal: #3c6e71;
+    --black-gray: #353535;
+}
+*,html
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Inter', sans-serif ;
+}
+/* navbar */
+.container-fluid img
+{
+    width: 50px;
+    height: 50px;
+}
+/* header */
+.layer{
+    background: linear-gradient(var(--blue) , var(--teal) 60%);
+}
+.content h1{
+    font-size: 84px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif !important;
+}
+button{
+    background-color: var(--blue);
+} 
+button:hover{
+    background-color: var(--black-gray);
+}
+.tumor-detect h4{
+    color: var(--gray);
+}
+label{
+    color: var(--teal);
+    background-color: var(--white);
+}
+label:hover{
+    background-color: var(--black-gray);
+    cursor: pointer;
+}
+
+#result p::before{
+    content: '';
+    position: absolute;
+    background-color: var(--teal);
+    top: 0;
+    left: 29%;
+    width: 25%;
+    height: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
